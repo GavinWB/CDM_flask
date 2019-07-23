@@ -1,0 +1,127 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CDM - Webpage",
+		"_postman_id": "d68b41fa-b93f-fdf0-0416-687c84ad6422",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "For using",
+			"description": "",
+			"item": [
+				{
+					"name": "Register new user",
+					"request": {
+						"url": "{{api}}/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tuannd\",\n\t\"password\": \"123456\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"url": "{{api}}/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tuannd\",\n\t\"password\": \"123456\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get question by ID",
+					"request": {
+						"url": "{{api}}/question/M041052",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwiZXhwIjoxNTY1NDE0MjA5fQ.hWujolPgZOI62J7gH3fHUOTMQP0FX3He7MrnhpQ4Bw0",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "For debugging",
+			"description": "",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"url": "{{api}}/users",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all questions",
+					"request": {
+						"url": "{{api}}/questions",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Import questions",
+					"request": {
+						"url": "{{api}}/questions/import",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"questionID\": \"1\",\n        \"originalQuestionID\": \"M012001\",\n        \"answerKey\": \"A\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"1\",\n        \"diagramName\": \"M012001.PNG\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"In the figure, how many MORE small squares need to be shaded so that 4/5 of the small squares are shaded? (A) 5 (B) 4 (C) 3 (D) 2 (E) 1\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"100000000000101\"\n    },\n    {\n        \"questionID\": \"2\",\n        \"originalQuestionID\": \"M012002\",\n        \"answerKey\": \"C\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"1\",\n        \"diagramName\": \"M012002.PNG\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"The objects on the scale make it balance exactly. On the left pan there is a 1 kg weight (mass) and half a brick. On the right pan there is one brick. What is the weight (mass) of one brick? (A) 0.5 kg (B) 1 kg (C) 2 kg (D) 3 kg\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000001000000000\"\n    },\n    {\n        \"questionID\": \"3\",\n        \"originalQuestionID\": \"M012004\",\n        \"answerKey\": \"D\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"Alice can run 4 laps around a track in the same time that Carol can run 3 laps. When Carol has run 12 laps, how many laps has Alice run? (A) 9 (B) 11 (C) 13 (D) 16\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"010000100000000\"\n    },\n    {\n        \"questionID\": \"4\",\n        \"originalQuestionID\": \"M012040\",\n        \"answerKey\": \"D\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"If 12/n=36/21, then n equals (A) 3 (B) 7 (C) 36 (D) 63\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000001100000000\"\n    },\n    {\n        \"questionID\": \"5\",\n        \"originalQuestionID\": \"M012041\",\n        \"answerKey\": \"D\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"In a group of children, 16 have birthdays during the first half of the year, and 14 have birthdays during the second half of the year. What fraction of the group have birthdays during the first half of the year? (A) 14/30 (B) 14/16 (C) 16/14 (D) 16/30 (E) 30/16\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"100000000000000\"\n    },\n    {\n        \"questionID\": \"6\",\n        \"originalQuestionID\": \"M012042\",\n        \"answerKey\": \"E\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"If x = -3, what is the value of -3x? (A)-9 (B) -6 (C)-1 (D) 1 (E) 9\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000010001000000\"\n    },\n    {\n        \"questionID\": \"7\",\n        \"originalQuestionID\": \"M032570\",\n        \"answerKey\": \"A\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"At a play, 3/25 of the people in the audience were children. What percent of the audience was this? (A) 12% (B) 3% (C) 0.3% (D) 0.12%\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"010000000000000\"\n    },\n    {\n        \"questionID\": \"8\",\n        \"originalQuestionID\": \"M032643\",\n        \"answerKey\": \"C\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"If n is a negative integer, which of these is the largest number? (A) 3 + n (B) 3 × n (C) 3 ? n (D) 3 ÷ n\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"000100001000000\"\n    },\n    {\n        \"questionID\": \"9\",\n        \"originalQuestionID\": \"M012016\",\n        \"answerKey\": \"B\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"In which of these pairs of numbers is 2.25 larger than the first number but smaller than the second number? (A) 1 and 2 (B) 2 and 5/2 (C) 5/2 and 11/4 (D) 11/4 and 3\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"000100001000000\"\n    },\n    {\n        \"questionID\": \"10\",\n        \"originalQuestionID\": \"M012017\",\n        \"answerKey\": \"B\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"1\",\n        \"diagramName\": \"M012017.PNG\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"Matchsticks are arranged as shown in the figures. If the pattern is continued, how many matchsticks would be used to make Figure 10? (A) 30 (B) 33 (C) 36 (D) 39 (E) 42\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000001000010010\"\n    },\n    {\n        \"questionID\": \"11\",\n        \"originalQuestionID\": \"M022251\",\n        \"answerKey\": \"C\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"Graham has twice as many books as Bob. Chan has six more books than Bob. If Bob has x books, which of the following represents the total number of books the three boys have? (A) 3x + 6 (B) 3x + 8 (C) 4x + 6 (D) 5x + 6 (E) 8x + 2\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000010000000000\"\n    },\n    {\n        \"questionID\": \"12\",\n        \"originalQuestionID\": \"M022185\",\n        \"answerKey\": \"E\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"Subtract: 3x/7-x/7= (A) 2/7 (B) 3 (C) 2x (D) x/7 (E) 2x/7\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000010000000000\"\n    },\n    {\n        \"questionID\": \"13\",\n        \"originalQuestionID\": \"M022191\",\n        \"answerKey\": \"A\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"Two-thirds of the people present at the beginning of a meeting are men. Nobody leaves but 10 more men and 10 more women arrive at the meeting. Which of the following statements is true? (A) There would then be more men than women at the meeting. (B) There would then be the same number of men as there are women at the meeting. (C) There would then be more women than men at the meeting. (D) From the information given, you cannot tell whether there would be more women or men.\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"000001000000000\"\n    },\n    {\n        \"questionID\": \"14\",\n        \"originalQuestionID\": \"M022194\",\n        \"answerKey\": \"D\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"About 7,000 copies of a magazine are sold each week. Approximately how many magazines are sold each year? (A) 8,400 (B) 35,000 (C) 84,000 (D) 350,000 (E) 3,500,000\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"010000000000010\"\n    },\n    {\n        \"questionID\": \"15\",\n        \"originalQuestionID\": \"M022196\",\n        \"answerKey\": \"A\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"If L = 4 when K = 6 and M = 24, which of the following is true? (A) L = M/K (B) L =K/M (C) L = KM (D) L = K + M (E) L = M ? K\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000010000000000\"\n    },\n    {\n        \"questionID\": \"16\",\n        \"originalQuestionID\": \"M022198\",\n        \"answerKey\": \"D\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"In which list are the numbers ordered from greatest to least? (A) 0.233, 0.3, 0.32, 0.332 (B) 0.3, 0.32, 0.332, 0.233 (C) 0.32, 0.233, 0.332, 0.3 (D) 0.332, 0.32, 0.3, 0.233\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"000100000000000\"\n    },\n    {\n        \"questionID\": \"17\",\n        \"originalQuestionID\": \"M022199\",\n        \"answerKey\": \"E\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"3/5 + (3/10 x 4/15) = (A) 3/51 (B) 1/6 (C) 6/25 (D) 11/25 (E) 17/25\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"001000001000101\"\n    },\n    {\n        \"questionID\": \"18\",\n        \"originalQuestionID\": \"M022043\",\n        \"answerKey\": \"D\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"1\",\n        \"diagramName\": \"M022043.PNG\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"which circle has approximately the same fraction of its area shaded as the rectangle above? \",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"000000000000100\"\n    },\n    {\n        \"questionID\": \"19\",\n        \"originalQuestionID\": \"M022046\",\n        \"answerKey\": \"7.185\",\n        \"isMultipleChoiceQuestion\": \"0\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"A gardener mixes 4.45 kilograms of rye grass seed with 2.735 kilograms of clover seed to make a mix for sowing a lawn area. how many kilograms of lawn mix does he now have? \",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"001000000000000\"\n    },\n    {\n        \"questionID\": \"20\",\n        \"originalQuestionID\": \"M022050\",\n        \"answerKey\": \"E\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"x/3 > 8 is equivalent to (A) x < 5 (B) X < 24 (C) x > 8/3 (D) x > 5 (E) x > 24\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000001000000000\"\n    },\n    {\n        \"questionID\": \"21\",\n        \"originalQuestionID\": \"M022057\",\n        \"answerKey\": \"C\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"One year a company reported selling 1426 tons of fertilizer, the following year the company sold 15 percent less fertilizer. What is the closest approximation to the number of tons of fertilizer sold in the second year? (A) 200 (B) 300 (C) 1200 (D) 1600 (E) 1700\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"010000010000000\"\n    },\n    {\n        \"questionID\": \"22\",\n        \"originalQuestionID\": \"M022066\",\n        \"answerKey\": \"D\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"2/5 + 5/4 + 9/8 = (A) 16/17 (B) 41/40 (C) 81/40 (D) 111/40\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"001000000000001\"\n    },\n    {\n        \"questionID\": \"23\",\n        \"originalQuestionID\": \"M022232\",\n        \"answerKey\": \"27 minutes\",\n        \"isMultipleChoiceQuestion\": \"0\",\n        \"includesDiagram\": \"1\",\n        \"diagramName\": \"M022232.PNG\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"Katy made a table to keep track of how long it took water in a breaker to cool from 95 degree Celsius to 70 degree Celsius, she measured the time it took the water to cool in 5 degree Celsius intervals. Estimate to the nearest minute the total time taken for the temperature of the water in the breaker to cool from 95 degree Celsius to 70 degree Celsius.\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"010000000000000\"\n    },\n    {\n        \"questionID\": \"24\",\n        \"originalQuestionID\": \"M022234B\",\n        \"answerKey\": \"8/15\",\n        \"isMultipleChoiceQuestion\": \"0\",\n        \"includesDiagram\": \"1\",\n        \"diagramName\": \"M022234B.PNG\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"Now we have a new rectangle whose length is three-fourths the length of the rectangle above, and whose width is two and one-half times the width of the rectangle above, what is the ratio of the ares of the original rectangle to the area of the new one?\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"100000000000000\"\n    },\n    {\n        \"questionID\": \"25\",\n        \"originalQuestionID\": \"M032142\",\n        \"answerKey\": \"B\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"1\",\n        \"diagramName\": \"M032142.PNG\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"The table above shows the numbers of boys and girls in four classes, which two classes have the same ratio of boys and girls? (A) 1 and 2 (B) 1 and 3 (C) 2 and 3 (D) 2 and 4\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"010000100000000\"\n    },\n    {\n        \"questionID\": \"26\",\n        \"originalQuestionID\": \"M032198\",\n        \"answerKey\": \"D\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"0\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"2ae2 x 3a = (A) 5ae2 (b) 5ae3 (C) 6ae2 (D) 6ae3\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000000000001000\"\n    },\n    {\n        \"questionID\": \"27\",\n        \"originalQuestionID\": \"M032640\",\n        \"answerKey\": \"24\",\n        \"isMultipleChoiceQuestion\": \"0\",\n        \"includesDiagram\": \"1\",\n        \"diagramName\": \"M032640.PNG\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"In the figure, 13 matches were used to make 4 sequares in a row, What is the number of sequares in a row that can be made in this way using 73 matches?\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000001000010010\"\n    },\n    {\n        \"questionID\": \"28\",\n        \"originalQuestionID\": \"M032755\",\n        \"answerKey\": \"500 for the first one, 540 for the second one, can afford the first one.\",\n        \"isMultipleChoiceQuestion\": \"0\",\n        \"includesDiagram\": \"1\",\n        \"diagramName\": \"M032755.PNG\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"The total cost of the journey for all the students must be 500 zeds or less, there are 30 students in the class. The following picture shows the costs for visiting each town,  which town can they afford to visit?\",\n        \"subject\": \"math\",\n        \"category\": \"Number\",\n        \"qmatrix\": \"010000110010000\"\n    },\n    {\n        \"questionID\": \"29\",\n        \"originalQuestionID\": \"M032163\",\n        \"answerKey\": \"C\",\n        \"isMultipleChoiceQuestion\": \"1\",\n        \"includesDiagram\": \"1\",\n        \"diagramName\": \"M032163.PNG\",\n        \"schoolGrade\": \"8\",\n        \"year\": \"2003\",\n        \"question\": \"The table below shows a relation between x and y. which of the following equations express this relation? (A) y=x+4 (B) y=x+1 (C) y=2x-1 (D) y=3x-2\",\n        \"subject\": \"math\",\n        \"category\": \"Algebra\",\n        \"qmatrix\": \"000010000000000\"\n    }\n]"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
