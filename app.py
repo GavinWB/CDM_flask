@@ -205,6 +205,7 @@ def generate_remedial_hamming_questions(current_user):
         data["isMultipleChoiceQuestion"] = questions[index].isMultipleChoiceQuestion
         data["includesDiagram"] = questions[index].includesDiagram
         data["diagramName"] = questions[index].diagramName
+        data["category"] = questions[index].category
         data["question"] = questions[index].question
 
         output.append(data)
